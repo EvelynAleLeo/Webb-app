@@ -1,0 +1,12 @@
+<img style='border-style: dashed; color: red' src='http://bit.ly/1eze8aE'>
+
+<h1> 'My name is <%= @random_name%> and my color is <%= @color%>'</h1>
+
+<% if @random_name == nil %>
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="text" name="color">
+  <input type="submit" value="Submit">
+</form>
+<% end %>
+
